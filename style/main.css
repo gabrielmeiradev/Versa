@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap');
+@import 'banners.css';
+@import 'navbar.css';
+@import 'sections.css';
+
+
+:root{
+    --primary-font: 'Be Vietnam Pro', sans-serif;
+    --secondary-font: 'Inter', sans-serif;
+
+    --main-padding: 56px 64px;
+    --horizontal-padding: 64px;
+    --vertical-padding: 56px;
+
+    --primary-color: #FFBA52;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-size: calc(12px + 0.390625vw);
+    font-family: var(--secondary-font);
+}
+
+a {
+    text-decoration: none;
+}
+
+::selection{
+    background: var(--primary-color);
+    color: #000000;
+}
+
+@media screen and (max-width: 720px) {
+    :root{
+        --main-padding: 30px 32px;
+        --horizontal-padding: 32px;
+        --vertical-padding: 30px;
+    }
+}
+
+.clearvision{
+    background: #FFC736;
+}
+
+.greenfit {
+    background: #72D542;
+}
+
+.trindade {
+    background: #F4B490;
+}
+
+.michele-cortinas {
+    background: #262626;
+    color: #FFFFFF;
+}
+
+.cta-button{
+    background: var(--primary-color);
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    margin: 0;
+}
+
+.contact-button{
+    background: var(--primary-color);
+    color: #000000;
+    z-index: 1000;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 15px 20px;
+    display: flex;
+    box-shadow: 2px 2px 25px 16px rgba(0, 0, 0, .04);
+    align-items: center;
+    gap: 10px;
+}
